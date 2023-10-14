@@ -1,0 +1,12 @@
+.footer {
+    &__container {
+        max-width: 1024px;
+        margin: 0 auto;
+        text-align: center;
+        color: black;
+
+        img{
+            max-width: 160px;
+        }
+    }
+}

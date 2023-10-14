@@ -1,0 +1,48 @@
+.hero {
+    padding: 21vw;
+    min-height: 90px;
+    margin-top: -70px;
+
+    img {
+        width: 250px;
+        justify-content: space-around;
+    }
+
+    &__container {
+        max-width: 300px;
+        text-align: center;
+        display: block;
+
+        a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            background-color: transparent;
+            padding: 8px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 24px;
+            border: 1px solid transparent;
+            margin-top: 20px;
+            text-transform: uppercase;
+
+            &:hover {
+                border: 3px solid #6b3334;
+            }
+
+
+        }
+
+        img {
+            display: block;
+            width: 100%;
+            padding-top: 50px;
+        }
+
+
+    }
+
+
+
+}
