@@ -14,7 +14,7 @@
             padding: 2vw 0;
         }
 
-        @media (max-width: 1027px) {
+        @media (min-width: 767px) and (max-width: 1027px) {
             display: grid;
             grid-template-columns: 1fr 1fr;
             padding: 2vw 0;

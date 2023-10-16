@@ -7,6 +7,16 @@
     margin: 0 auto;
     align-items: center;
     top: 100;
+
+    @media (min-width: 767px) and (max-width: 1027px) {
+        max-width: 95%;
+    }
+
+    @media (max-width: 768px) {
+        display: block;
+        max-width: 80%;
+        margin-top: 86px;
+    }
     
     &__imagem {
         img {
