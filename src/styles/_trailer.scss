@@ -8,6 +8,14 @@
         border-radius: 8px;
         width: 963px;
         height: 542px;
+        max-width: 100%;
+
+        @media (max-width: 768px) {
+            max-width: 100%;
+            width: 500px;
+            height: 300px;
+        }
+
     }
     
 }

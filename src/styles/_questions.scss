@@ -1,14 +1,24 @@
 .accordion {
     max-width: 1024px;
     margin: 0 auto;
+
+    @media (max-width: 768px) {
+        padding: 5vw;
+    }
+
+    @media (max-width: 1027px) {
+            padding: 5vw;
+    }
     
 }
 
 .accordion-button {
-    background-color: darken($color: #6b3334, $amount: 5%);
+    background-color: lighten($color: #1d333f, $amount: 5%);
     font-weight: bold;
     font-size: 20px;
-    color: #000;
+    color: #fff;
+    letter-spacing: 1px;
+
 }
 
 .accordion-item {
@@ -19,22 +29,25 @@
 
 
 .accordion-button:not(.collapsed) {
-    background-color: darken($color: #6b3334, $amount: 5%);
+    background-color: lighten($color: #1d333f, $amount: 5%);
     border: none;
-    color: #000;
+    color: #fff;
     box-shadow: none;
 }
 
 .accordion-body {
-    background-color: darken($color: #6b3334, $amount: 5%);
+    background-color: lighten($color: #1d333f, $amount: 3%);
     font-size: 20px;
     font-weight: bold;
     border: none;
     padding: 16px;
+    color: #cecece;
+    letter-spacing: 1px;
 }
 
 .questions>h2 {
     text-align: center;
     padding: 32px;
-    color: black;
+    color: #fff;
+    font-size: 40px;
 }

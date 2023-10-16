@@ -1,16 +1,30 @@
 .images {
-    text-align: center;
-    padding: 0 2vw;
+    padding: 0 5vw;
+    
 
     &__list {
         list-style-type: none;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+
+        @media (max-width: 768px) {
+            display: grid;
+            grid-template-columns: 1fr;
+            padding: 2vw 0;
+        }
+
+        @media (max-width: 1027px) {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            padding: 2vw 0;
+        }
         
         &__item {
-            max-width: 546px;
             margin-top: 25px;
+            max-width: 100%;
             border-radius: 6px;
+
         }
     }
 }

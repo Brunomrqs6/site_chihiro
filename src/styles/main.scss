@@ -5,13 +5,16 @@
 @use 'questions';
 @use 'footer';
 @use 'trailer';
+@use 'viagem';
 
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Young Serif', serif;
 }
 
 body {
-    background-color: #6b3334;
+    background-color: #1d333f;
+    overflow-x: hidden;
 }

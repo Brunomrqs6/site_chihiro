@@ -6,8 +6,16 @@
     position: sticky;
     top: 0;
     left: 0;
+    visibility: hidden;
+    transition: background-color .5s ease;
+    z-index: 2;
+
+    @media (max-width: 1027px) {
+        padding: 7px 25px;
+    }
 
     &--is-hidden {
+        visibility: visible;
         background-color: rgba($color: #000, $alpha: .9);
         transition: background-color .5s ease;
     }
@@ -19,11 +27,16 @@
         margin: 0 auto;
         align-items: center;
 
+        @media (max-width: 768px) {
+            justify-content: center;
+        }
+
         img {
             max-width: 300px;
             height: 70px;
             padding: 2px;
             margin: 0;
+            visibility: visible;
         }
     }
 
@@ -36,6 +49,12 @@
             border-radius: 4px;
             padding: 15px;
             cursor: pointer;
+
+            @media (max-width: 768px) {
+                
+                display: none;
+                
+            }
             
             &:hover {
                 background-color: lighten($color: #6b3334, $amount: 5%);
