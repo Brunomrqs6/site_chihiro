@@ -1,3 +1,5 @@
+AOS.init();
+
 document.addEventListener('DOMContentLoaded', function() {
     const heroSection = document.querySelector('.hero');
     const alturaHero = heroSection.clientHeight;
